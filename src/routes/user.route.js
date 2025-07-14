@@ -10,13 +10,7 @@ const router=Router()
 router.route("/login").post(Login)
 
 router.route("/register").post(
-  
-      upload.fields([{
-        name:"avatar",
-        maxCount:1
-    },
-   ])
-    ,register)
+  register)
 
     router.route("/get-profile").get(authantication, getProfile)
     router.route("/getothers").get(authantication,getOtherUser)

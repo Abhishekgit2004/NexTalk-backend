@@ -29,7 +29,7 @@ const register = asynchandler(async (req, res, next) => {
     fullName,
     username,
     password,
-    avatar:avatars.url,
+    avatar:avatars.url || "",
     gender,
   });
   // console.log(fullName,username,password,avatar,gender)
