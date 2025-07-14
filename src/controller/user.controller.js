@@ -10,7 +10,7 @@ const register = asynchandler(async (req, res, next) => {
   const { fullName, username, password,  gender } = req.body;
   const avatar=req.files;
 
-  if (!fullName || !username || !gender || !password || !avatar) {
+  if (!fullName || !username || !gender || !password ) {
     throw new ApiError(400, "all fields are rquired");
   }
 
